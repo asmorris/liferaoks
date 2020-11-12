@@ -1,0 +1,17 @@
+.post-wrapper {
+  display: grid;
+  padding: 1rem;
+  width: 80%;
+  border: 1px solid #000;
+  margin: 0.5rem;
+  border-radius: 0.25rem;
+}
+
+.post-title {
+  font-size: 2rem;
+  padding-bottom: 1rem;
+}
+
+.post-content {
+  font-size: 1rem;
+}

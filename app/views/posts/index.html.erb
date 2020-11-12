@@ -1,11 +1,6 @@
-<h1>Hello world</h1>
-
 <% @posts.each do |post| %>
   <%= render(PostComponent.new(title: post.title)) do %>
     <%= post.message %>
   <% end %>
 <% end %>
 
-<div data-controller="hello">
-  <button data-action="click->hello#click">Say hello</button>
-</div>

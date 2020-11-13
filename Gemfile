@@ -24,6 +24,7 @@ gem 'webpacker', '~> 4.0'
 # gem 'image_processing', '~> 1.2'
 
 group :development, :test do
+  gem 'awesome_print'
   gem 'byebug', platforms: %i[mri mingw x64_mingw]
   gem 'factory_bot_rails'
   gem 'rspec-rails'

@@ -1,6 +1,4 @@
 <% @posts.each do |post| %>
-  <%= render(PostComponent.new(title: post.title)) do %>
-    <%= post.message %>
-  <% end %>
+  <%= render(PostComponent.new(title: post.title, message: post.message)) %>
 <% end %>
 

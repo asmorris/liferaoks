@@ -1,6 +1,62 @@
+@import './colours.scss';
+
 .main-navbar {
   width: 100%;
-  height: 3rem;
-  border-bottom: 1px solid #000;
+  height: 5rem;
   margin-bottom: 1rem;
+  display: grid;
+  align-items: center;
+  grid-template-columns: 1fr 1fr 1fr;
+  background-color: $lightBlue;
+  box-shadow: $standardBoxShadow;
+}
+
+.navbar-brand {
+  text-decoration: none;
+  font-size: 1.5rem;
+  font-weight: bolder;
+  padding: 0 1rem;
+  color: $darkBlue;
+
+  &:hover {
+    color: $darkestBlue;
+  }
+}
+
+.navbar-top-posts {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+
+  a {
+    color: $darkBlue;
+    height: 100%;
+    flex-basis: 100%;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    border-right: 1px solid $darkBlue;
+    justify-content: center;
+    text-align: center;
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: bolder;
+
+    &:first-child {
+      border-left: 1px solid $darkBlue;
+    }
+
+    &:hover {
+      background: $darkBlue;
+      cursor: pointer;
+      color: $lightBlue;
+    }
+  }
+
+}
+
+.navbar-user-settings {
+  justify-self: end;
+  padding: 0 1rem;
 }

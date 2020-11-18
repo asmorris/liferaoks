@@ -7,7 +7,7 @@
   display: grid;
   align-items: center;
   grid-template-columns: 1fr 1fr 1fr;
-  background-color: $lightBlue;
+  background-color: $lightestBlue;
   box-shadow: $standardBoxShadow;
 }
 
@@ -19,7 +19,7 @@
   color: $darkBlue;
 
   &:hover {
-    color: $darkestBlue;
+    color: $smokeBlack;
   }
 }
 
@@ -50,10 +50,9 @@
     &:hover {
       background: $darkBlue;
       cursor: pointer;
-      color: $lightBlue;
+      color: $lightestBlue;
     }
   }
-
 }
 
 .navbar-user-settings {
